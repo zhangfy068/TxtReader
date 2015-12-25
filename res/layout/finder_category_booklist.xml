@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lotContent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        style="@style/top_titlebar">
+
+        <TextView
+            android:id="@+id/txvTitle"
+            style="@style/top_titlebar_txv"/>
+
+        <Button
+            style="@style/top_titlebar_btn_close"/>
+
+    </FrameLayout>
+
+</LinearLayout>

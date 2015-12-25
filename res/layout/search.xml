@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="#f8f4ed">
+
+    <LinearLayout
+        style="@style/top_titlebar">
+
+        <TextView
+            style="@style/top_titlebar_txv"
+            android:text="@string/search_head_title"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:background="@drawable/book_shelf_deep_bg_layer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_input_bar_bg">
+
+            <LinearLayout
+                android:id="@+id/lotBookType"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/search_input_term_bg">
+
+                <TextView
+                    android:id="@+id/txvBookType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_type_all"
+                    android:textSize="17sp"
+                    android:textColor="#4d4d4d"/>
+
+                <ImageView
+                    android:id="@+id/imvSearchArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_type_arrow"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtSearchKeyword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/btnGoSearch"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/book_search_btn_selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.vincestyling.ixiaoshuo.ui.KeywordsFlow
+        android:id="@+id/keywordsflow"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true" />
+
+</LinearLayout>

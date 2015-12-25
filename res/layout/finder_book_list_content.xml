@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vincestyling.ixiaoshuo.ui.PullToLoadPageListView
+        android:id="@+id/lsvFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="@android:color/transparent"/>
+
+    <include
+        layout="@layout/network_unavaliable"/>
+
+</RelativeLayout>

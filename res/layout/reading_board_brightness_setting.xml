@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lotBrightnessSetting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:id="@+id/linearBrightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reading_board_light_dark"/>
+
+        <SeekBar
+            android:id="@+id/seekBright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="12dp"
+            android:max="250"
+            android:progress="0"
+            android:secondaryProgress="0"
+            android:progressDrawable="@drawable/reading_board_seekbar_progress"
+            android:thumb="@drawable/reading_board_seekbar_thumb"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reading_board_light_shine"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonLight"
+            android:text="@string/reading_board_light_mode"
+            style="@style/reading_board_setting_btn_left"/>
+
+        <Button
+            android:id="@+id/buttonDark"
+            android:text="@string/reading_board_dark_mode"
+            style="@style/reading_board_setting_btn_right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

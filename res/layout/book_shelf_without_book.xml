@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/without_book_container">
+
+    <LinearLayout
+        android:layout_height="224dp"
+        style="@style/without_book_main_container">
+
+        <TextView
+            style="@style/without_book_top_tip"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:paddingRight="8dp">
+
+            <LinearLayout
+                style="@style/without_book_second_container"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lotGoFinder"
+                        style="@style/without_book_menu_container"
+                        android:background="@drawable/book_shelf_without_book_btn_top_selector">
+
+                        <ImageView
+                            style="@style/without_book_menu_icon"
+                            android:src="@drawable/book_shelf_without_book_finder"/>
+
+                        <LinearLayout
+                            style="@style/without_book_menu_tips_container">
+
+                            <TextView
+                                style="@style/without_book_menu_primary_txt"
+                                android:text="@string/without_book_finder_tip1"/>
+
+                            <TextView
+                                android:id="@+id/txvFinderTip"
+                                style="@style/without_book_menu_secondary_txt"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            style="@style/without_book_menu_tips_arrow"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eeebe6"/>
+
+                    <LinearLayout
+                        android:id="@+id/lotGoDetector"
+                        style="@style/without_book_menu_container"
+                        android:background="@drawable/book_shelf_without_book_btn_bottom_selector">
+
+                        <ImageView
+                            style="@style/without_book_menu_icon"
+                            android:src="@drawable/book_shelf_without_book_detector"/>
+
+                        <LinearLayout
+                            style="@style/without_book_menu_tips_container">
+
+                            <TextView
+                                style="@style/without_book_menu_primary_txt"
+                                android:text="@string/without_book_detector_tip1"/>
+
+                            <TextView
+                                style="@style/without_book_menu_secondary_txt"
+                                android:text="@string/without_book_detector_tip2"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            style="@style/without_book_menu_tips_arrow"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/book_shelf_without_book_2items_wrap_line"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.vincestyling.ixiaoshuo.ui.WithoutBookStatisticsView
+        android:id="@+id/lotBookStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/book_shelf_without_book_bottom_tip"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ixiaoshuo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vincestyling.ixiaoshuo.ui.TopTabIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        ixiaoshuo:btnSpacing="20dp"
+        android:background="@drawable/title_bg_layer"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shelfPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/book_shelf_bg_layer"/>
+
+</LinearLayout>

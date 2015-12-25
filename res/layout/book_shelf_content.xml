@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lotContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lotBookShelf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:background="@drawable/book_shelf_listview_container">
+
+        <ListView
+            android:id="@+id/lsvBookShelf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/book_shelf_list_divider"
+            android:listSelector="@drawable/book_shelf_listview_bg_selector"
+            android:layout_marginBottom="3dp"
+            android:fastScrollEnabled="true"
+            android:cacheColorHint="@android:color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/book_shelf_listview_bg_bottom_divider_layer"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

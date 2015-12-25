@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/reading_board_chapter_list_bg">
+
+    <LinearLayout
+        style="@style/top_titlebar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/top_titlebar_txv"
+                android:text="@string/reading_board_catalog"/>
+
+            <Button
+                style="@style/top_titlebar_btn_close"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsvChapterList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/reading_board_chapter_list_divider"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/reading_board_chapter_list_bg_selector"
+        android:cacheColorHint="@android:color/transparent"/>
+
+</LinearLayout>
